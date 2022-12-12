@@ -1,5 +1,7 @@
+// Connecting express router
 const router = require("express").Router();
 const store = require("../db/store");
+const fs = require("fs");
 
 router.get("/notes", (req, res) => {
     store
